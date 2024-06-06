@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(228, 200, 200);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: rgb(189, 35, 21);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: rgb(25, 154, 143);
+        }
+
+        .top-right-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .top-left-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-right-button">
+    <a href="registration.html" class="button">Register</a>
+</div>
+
+<div class="top-left-button">
+    <a href="login.html" class="button">Login</a>
+</div>
+   
+<div class="container">
+    <h1>Welcome to Our Site</h1>
+    <p>Click the button below to register.</p>
+    <a href="registration.html" class="button">Go to Registration</a>
+</div>
+
+</body>
+</html>

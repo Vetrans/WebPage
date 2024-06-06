@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(228, 200, 200);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 320px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+        width: 70%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .Buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    input[type="submit"], input[type="button"] {
+        width: 30%;
+        padding: 10px;
+        background-color: rgb(189, 35, 21);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover, input[type="button"]:hover {
+        background-color: rgb(25, 154, 143);
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <form method="post">
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+            </div>
+
+
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Your email.." required>
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Your password.." required>
+            </div>
+
+        
+            <div class="Buttons">            
+                <input type="submit" value="Submit">
+                <input type="button" value="Save" onclick="handleSave()">
+                <input type="button" value="Reject" onclick="handleReject()">
+            </div>
+        
+        </form>
+    </div>
+<script>
+    function handleSave() {
+        alert("Login details saved successfully.");
+    }
+
+    function handleReject() {
+        alert("Login details rejected successfully.");
+    }
+</script>
+</body>
+</html>
