@@ -19,6 +19,15 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $dob = $_POST['dob'];
 
+// Calculate age
+$dobDate = new DateTime($dob);
+$today = new DateTime();
+$age = $today->diff($dobDate)->y;
+
+if ($age < 11) {
+    die("You must be at least 11 years old to register.");
+}
+
 // Hash the password
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
