@@ -6,14 +6,14 @@
     <title>Rishi's Site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <style>
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: rgb(228, 200, 200);
+    background-color: #fff; /* Change background color to white */
 }
 
 header {
@@ -22,17 +22,19 @@ header {
     padding: 1rem 0;
 }
 
-
 main {
     padding: 2rem;
     text-align: center;
 }
 
-
 section#home {
     background: url('hero-image.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #000; /* Change text color to black for visibility */
     padding: 5rem 0;
+}
+
+h1 {
+    color: #ff6347; /* Change the welcome text to a color like red for contrast */
 }
 
 button {
@@ -50,14 +52,14 @@ button:hover {
 }
 
 .top-buttons {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
-        .top-buttons a {
-            margin-left: 10px;
-        }
+.top-buttons a {
+    margin-left: 10px;
+}
 
 footer {
     background-color: #007BFF;
@@ -69,39 +71,42 @@ footer {
     bottom: 0;
 }
 </style>
+
 <body>
     <header>
-        <nav>            
+        <nav>
             <a href="index.html"><button>Home</button></a>
-             <a href="aboutus.html"><button> About Us</button></a>
-              <a href="services.html"><button> Services</button></a>
-               <a href="contact.html"><button> Contact</button></a>
-                    <div class="top-buttons">
-                        <a href="login.html"><button>Login</button></a>
-                        <a href="registration.html"><button>Register</button></a>
-                    </div>
-        </nav>    
-        
+            <a href="aboutus.html"><button>About Us</button></a>
+            <a href="services.html"><button>Services</button></a>
+            <a href="contact.html"><button>Contact</button></a>
+            <div class="top-buttons">
+                <a href="login.html"><button>Login</button></a>
+                <a href="registration.html"><button>Register</button></a>
+            </div>
+        </nav>
     </header>
+
     <main>
         <section id="home">
             <h1>Welcome to Vetran/Rishi's Page</h1>
-            
-            
         </section>
+
         <section id="about">
             <h2>About Us</h2>
             <p>Learn more about us by clicking About us above the Page.</p>
         </section>
+
         <section id="services">
             <h2>Our Services</h2>
             <p>Discover the wide range of services we offer by clicking Services above the Page.</p>
         </section>
+
         <section id="contact">
             <h2>Contact Us</h2>
             <p>Get in touch with us for more information click on Contact above the Page.</p>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Vetrans. All rights reserved.</p>
     </footer>
